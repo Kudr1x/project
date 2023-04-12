@@ -42,4 +42,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
     implementation 'com.github.florent37:singledateandtimepicker:2.2.7'
     implementation 'com.orhanobut:dialogplus:1.11@aar'
+    implementation 'com.yandex.android:maps.mobile:4.3.1-full'
+
 }
