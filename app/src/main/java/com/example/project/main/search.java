@@ -60,14 +60,14 @@ public class search extends Fragment implements SelectListenerString {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        MapKitFactory.setApiKey("bdd998b5-582a-4519-ab3f-424df6763579");
-        MapKitFactory.initialize(getContext());
         return inflater.inflate(R.layout.fragment_search, container, false);
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        MapKitFactory.initialize(getContext());
+
         mapView = view.findViewById(R.id.mapview);
 
         user = view.findViewById(R.id.user);
@@ -136,6 +136,12 @@ public class search extends Fragment implements SelectListenerString {
         arr.add("Приора");
         arr.add("Гелик");
         recyclerView.setAdapter(new carsAdapter(arr, this, getActivity()));
+    }
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        MapKitFactory.setApiKey("bdd998b5-582a-4519-ab3f-424df6763579");
     }
 
     @Override

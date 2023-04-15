@@ -181,7 +181,7 @@
                         android:background="#37000000"/>
 
                     <androidx.constraintlayout.widget.ConstraintLayout
-                        android:id="@+id/changeCity"
+                        android:id="@+id/cars"
                         android:layout_width="match_parent"
                         android:layout_height="55dp">
 
@@ -196,6 +196,7 @@
                         <ImageView
                             android:id="@+id/imageView10"
                             android:layout_width="28dp"
+                            android:src="@drawable/car"
                             android:layout_height="28dp"
                             android:layout_marginStart="16dp"
                             android:layout_marginTop="16dp"
@@ -207,7 +208,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="16dp"
                             android:layout_marginTop="16dp"
-                            android:text="И что угодно ещё"
+                            android:text="Мой автопарк"
                             android:textSize="19sp"
                             app:layout_constraintStart_toEndOf="@+id/imageView10"
                             app:layout_constraintTop_toTopOf="parent" />

@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.project"
-        minSdk 30
+        minSdk 27
         targetSdk 33
         versionCode 1
         versionName "1.0"
@@ -43,5 +43,6 @@ dependencies {
     implementation 'com.github.florent37:singledateandtimepicker:2.2.7'
     implementation 'com.orhanobut:dialogplus:1.11@aar'
     implementation 'com.yandex.android:maps.mobile:4.3.1-full'
+    implementation 'com.google.code.gson:gson:2.9.0'
 
 }
